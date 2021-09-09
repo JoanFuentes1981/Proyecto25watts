@@ -1,0 +1,36 @@
+Paso 1: abrir terminar en la carpeta del proyecto, sea por visual studio o cmd de windows.
+Paso 2: Iniciar npm con el comando:
+npm init
+Paso 3: Dar enter hasta que aparezca esta leyenda: Is this OK? (yes)
+Paso 4: Escribir yes y apretar "enter".
+Paso 5: Ejecutar este comando: npm install node-sass nodemon y presionar "enter".
+Paso 6: Crear las carpetas scss con su archivo respectivo y también la carpeta css con su archivo respectivo.
+Paso 7: Colocar estas líneas de código en el package.json:
+"build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+Paso 8: El archivo package.json debe quedar de esta manera:
+{
+  "name": "nueva-carpeta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
+Paso 9: Ejecutar el siguiente comando: npm run watch-css
+Paso 10: Si hiciste todo esto, te aparece esta leyenda en la terminal:
+Rendering Complete, saving .css file...
+Wrote CSS to C:\Users\joseb\OneDrive\Escritorio\Nueva carpeta\css\prueba.css
+[nodemon] clean exit - waiting for changes before restart
+Escribiste código en la hoja de estilos scss y no te sale ningún error, FELICITACIONES, YA PODÉS TRABAJAR CON SASS 
+Espero les sirva a tod@s, :guiño:
+PD: Cada vez que quieran iniciar SASS y tengan la consola/terminal cerrada, abren la consola, aplican este comando: npm run watch-css y listo, no necesitan volver a hacer todo el proceso de nuevo. Exceptuando un nuevo proyecto, obvio

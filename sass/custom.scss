@@ -1,0 +1,20 @@
+
+$carousel-dark-indicator-active-bg: #E0752F;
+$carousel-indicator-width: 3rem;
+$carousel-indicator-active-bg: blue;
+$carousel-control-color: white;
+$carousel-indicator-width: 0.5em;
+$carousel-indicator-height: 0.5rem;
+
+$carousel-control-prev-icon-bg: url("../img/left.svg");
+$carousel-control-next-icon-bg:url("../img/rigth.svg");
+
+
+$accordion-button-active-color:#5f6368;
+$accordion-bg: #F8F8F8;
+$accordion-button-active-bg:#F2F4F1;
+$accordion-button-color:#7f8286;
+$accordion-icon-color: #E0752F;
+$accordion-icon-active-color: #E0752F;
+/* Siempre trababajar sobre esta importacion */
+@import "../node_modules/bootstrap/scss/bootstrap";
